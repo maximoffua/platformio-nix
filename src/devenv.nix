@@ -29,9 +29,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    packages = [
-      cfg.package
-    ] ++ cfg.platformPackages;
+    packages = cfg.platformPackages;
 
     languages.platformio.overrides = platformioConfig cfg.platformPackages;
 

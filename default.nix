@@ -4,6 +4,6 @@
 in {
   inherit devenvModule mkPlatformIOPackage;
 
-  gcc-arm = mkPlatformIOPackage "toolchain-gccarmnoneabi" [pkgs.gcc-arm-embedded];
+  gcc-arm = mkPlatformIOPackage "toolchain-gccarmnoneeabi" [pkgs.gcc-arm-embedded];
   openocd = mkPlatformIOPackage "tool-openocd" [pkgs.openocd];
 }
