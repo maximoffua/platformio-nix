@@ -1,6 +1,6 @@
 {pkgs, ...}: let
   inherit (import ./src/packages.nix {inherit pkgs;}) mkPlatformIOPackage;
-  devenvModule = import ./src/platformio.nix;
+  devenvModule = import ./src/devenv.nix;
 in {
   inherit devenvModule mkPlatformIOPackage;
 

@@ -1,7 +1,7 @@
 {pkgs, config, lib, ...}:
 let
     cfg = config.languages.platformio;
-    utils = import ./platformio.nix { inherit pkgs; };
+    utils = import ./packages.nix { inherit pkgs; };
     inherit (utils) platformioConfig;
 in
 {
